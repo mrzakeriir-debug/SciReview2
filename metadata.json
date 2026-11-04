@@ -1,0 +1,8 @@
+{
+  "name": "SciReview: Research Article Optimizer",
+  "description": "A specialized tool for scientific manuscript review based on Hengl & Gould's 40 steps and rules of thumb for writing research articles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
