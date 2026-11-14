@@ -1,4 +1,3 @@
-
 export type AnalysisPhase = 'structure' | 'coherence' | 'style';
 
 export interface StepFeedback {
@@ -15,12 +14,19 @@ export interface ManuscriptSection {
   content: string;
 }
 
+export interface ReviewSummary {
+  commentsForAuthors: string;
+  commentsForEditor: string;
+  editorialRecommendation?: 'Accept as is' | 'Minor Revision' | 'Major Revision' | 'Reject and Resubmit' | 'Reject';
+}
+
 export interface AnalysisResults {
   overallScore: number;
   sections: {
     [key: string]: StepFeedback[];
   };
   generalRecommendations: string[];
+  summary?: ReviewSummary;
 }
 
 export interface RuleStep {
